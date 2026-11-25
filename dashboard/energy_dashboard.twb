@@ -1,0 +1,3207 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelRelationshipPerfOptions />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='zonnestroom+ (postgres)' inline='true' name='federated.0zxq8no1i2vjoa124pvb602eir3b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.04be2jp0vye2s518z2ol10texwbi'>
+            <connection authentication='username-password' class='postgres' dbname='postgres' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='locaties_2024' table='[public].[locaties_2024]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='energielabels' table='[public].[energielabels]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='buurt' table='[public].[buurt]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='evz_locaties' table='[public].[evz_locaties]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='energieverbruik' table='[public].[energieverbruik]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='energieverbruik1' table='[public].[energieverbruik]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='hoofdverwarming' table='[public].[hoofdverwarming]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='zonnestroom1' table='[public].[zonnestroom]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='zonnestroom2' table='[public].[zonnestroom]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='gemeente' table='[public].[gemeente]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='wijk_2024' table='[public].[wijk_2024]' type='table' />
+          <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='zonnestroom' table='[public].[zonnestroom]' type='table' />
+        </relation>
+        <cols>
+          <map key='[% (energieverbruik)]' value='[energieverbruik].[%]' />
+          <map key='[% (energieverbruik1)]' value='[energieverbruik1].[%]' />
+          <map key='[%]' value='[hoofdverwarming].[%]' />
+          <map key='[AandeelHernieuwbareEnergieEMGForfaitair]' value='[energielabels].[AandeelHernieuwbareEnergieEMGForfaitair]' />
+          <map key='[AandeelHernieuwbareEnergie]' value='[energielabels].[AandeelHernieuwbareEnergie]' />
+          <map key='[BAGLigplaatsID]' value='[energielabels].[BAGLigplaatsID]' />
+          <map key='[BAGPandIDs]' value='[energielabels].[BAGPandIDs]' />
+          <map key='[BAGStandplaatsID]' value='[energielabels].[BAGStandplaatsID]' />
+          <map key='[BAGVerblijfsobjectID]' value='[energielabels].[BAGVerblijfsobjectID]' />
+          <map key='[BerekendeCO2Emissie]' value='[energielabels].[BerekendeCO2Emissie]' />
+          <map key='[BerekendeEnergieverbruik]' value='[energielabels].[BerekendeEnergieverbruik]' />
+          <map key='[Berekeningstype]' value='[energielabels].[Berekeningstype]' />
+          <map key='[Bouwjaar]' value='[energielabels].[Bouwjaar]' />
+          <map key='[Certificaathouder]' value='[energielabels].[Certificaathouder]' />
+          <map key='[Compactheid]' value='[energielabels].[Compactheid]' />
+          <map key='[Detailaanduiding]' value='[energielabels].[Detailaanduiding]' />
+          <map key='[EisAandeelHernieuwbareEnergie]' value='[energielabels].[EisAandeelHernieuwbareEnergie]' />
+          <map key='[EisEnergiebehoefte]' value='[energielabels].[EisEnergiebehoefte]' />
+          <map key='[EisPrimaireFossieleEnergie]' value='[energielabels].[EisPrimaireFossieleEnergie]' />
+          <map key='[EisTemperatuuroverschrijding]' value='[energielabels].[EisTemperatuuroverschrijding]' />
+          <map key='[EnergieIndexEMGForfaitair]' value='[energielabels].[EnergieIndexEMGForfaitair]' />
+          <map key='[EnergieIndex]' value='[energielabels].[EnergieIndex]' />
+          <map key='[Energiebehoefte]' value='[energielabels].[Energiebehoefte]' />
+          <map key='[Energieklasse]' value='[energielabels].[Energieklasse]' />
+          <map key='[Gebouwklasse]' value='[energielabels].[Gebouwklasse]' />
+          <map key='[Gebouwsubtype]' value='[energielabels].[Gebouwsubtype]' />
+          <map key='[Gebouwtype]' value='[energielabels].[Gebouwtype]' />
+          <map key='[GebruiksoppervlakteThermischeZone]' value='[energielabels].[GebruiksoppervlakteThermischeZone]' />
+          <map key='[GeldigTot]' value='[energielabels].[GeldigTot]' />
+          <map key='[Huisletter]' value='[energielabels].[Huisletter]' />
+          <map key='[Huisnummer]' value='[energielabels].[Huisnummer]' />
+          <map key='[Huisnummertoevoeging]' value='[energielabels].[Huisnummertoevoeging]' />
+          <map key='[ID (zonnestroom)]' value='[zonnestroom].[ID]' />
+          <map key='[ID (zonnestroom1)]' value='[zonnestroom1].[ID]' />
+          <map key='[ID (zonnestroom2)]' value='[zonnestroom2].[ID]' />
+          <map key='[ID]' value='[hoofdverwarming].[ID]' />
+          <map key='[Nummer]' value='[energielabels].[Nummer]' />
+          <map key='[OpBasisVanReferentiegebouw]' value='[energielabels].[OpBasisVanReferentiegebouw]' />
+          <map key='[Opnamedatum]' value='[energielabels].[Opnamedatum]' />
+          <map key='[Postcode]' value='[energielabels].[Postcode]' />
+          <map key='[PrimaireFossieleEnergieEMGForfaitair]' value='[energielabels].[PrimaireFossieleEnergieEMGForfaitair]' />
+          <map key='[PrimaireFossieleEnergie]' value='[energielabels].[PrimaireFossieleEnergie]' />
+          <map key='[Registratiedatum]' value='[energielabels].[Registratiedatum]' />
+          <map key='[SBICode]' value='[energielabels].[SBICode]' />
+          <map key='[SoortOpname]' value='[energielabels].[SoortOpname]' />
+          <map key='[Status]' value='[energielabels].[Status]' />
+          <map key='[Temperatuuroverschrijding]' value='[energielabels].[Temperatuuroverschrijding]' />
+          <map key='[Type verwarmingsinstallatie]' value='[hoofdverwarming].[Type verwarmingsinstallatie]' />
+          <map key='[Warmtebehoefte]' value='[energielabels].[Warmtebehoefte]' />
+          <map key='[Wijken en Buurten (energieverbruik1)]' value='[energieverbruik1].[Wijken en Buurten]' />
+          <map key='[Wijken en Buurten]' value='[energieverbruik].[Wijken en Buurten]' />
+          <map key='[Wijken en buurten (zonnestroom)]' value='[zonnestroom].[Wijken en buurten]' />
+          <map key='[Wijken en buurten (zonnestroom1)]' value='[zonnestroom1].[Wijken en buurten]' />
+          <map key='[Wijken en buurten (zonnestroom2)]' value='[zonnestroom2].[Wijken en buurten]' />
+          <map key='[Wijken en buurten]' value='[hoofdverwarming].[Wijken en buurten]' />
+          <map key='[Woningkenmerken (energieverbruik1)]' value='[energieverbruik1].[Woningkenmerken]' />
+          <map key='[Woningkenmerken]' value='[energieverbruik].[Woningkenmerken]' />
+          <map key='[aantal (zonnestroom1)]' value='[zonnestroom1].[aantal]' />
+          <map key='[aantal (zonnestroom2)]' value='[zonnestroom2].[aantal]' />
+          <map key='[aantal]' value='[zonnestroom].[aantal]' />
+          <map key='[adres_id (evz_locaties)]' value='[evz_locaties].[adres_id]' />
+          <map key='[adres_id]' value='[locaties_2024].[adres_id]' />
+          <map key='[buurt_code (buurt)]' value='[buurt].[buurt_code]' />
+          <map key='[buurt_code]' value='[locaties_2024].[buurt_code]' />
+          <map key='[buurtnaam]' value='[buurt].[buurtnaam]' />
+          <map key='[code (energieverbruik)]' value='[energieverbruik].[code]' />
+          <map key='[code (energieverbruik1)]' value='[energieverbruik1].[code]' />
+          <map key='[code (zonnestroom1)]' value='[zonnestroom1].[code]' />
+          <map key='[code (zonnestroom2)]' value='[zonnestroom2].[code]' />
+          <map key='[code]' value='[zonnestroom].[code]' />
+          <map key='[gemeente_code (gemeente)]' value='[gemeente].[gemeente_code]' />
+          <map key='[gemeente_code]' value='[locaties_2024].[gemeente_code]' />
+          <map key='[gemeentenaam]' value='[gemeente].[gemeentenaam]' />
+          <map key='[id]' value='[evz_locaties].[id]' />
+          <map key='[kWh (energieverbruik1)]' value='[energieverbruik1].[kWh]' />
+          <map key='[kWh]' value='[energieverbruik].[kWh]' />
+          <map key='[kWh_1 (energieverbruik1)]' value='[energieverbruik1].[kWh_1]' />
+          <map key='[kWh_1]' value='[energieverbruik].[kWh_1]' />
+          <map key='[kWp (zonnestroom1)]' value='[zonnestroom1].[kWp]' />
+          <map key='[kWp (zonnestroom2)]' value='[zonnestroom2].[kWp]' />
+          <map key='[kWp]' value='[zonnestroom].[kWp]' />
+          <map key='[m3 (energieverbruik1)]' value='[energieverbruik1].[m3]' />
+          <map key='[m3]' value='[energieverbruik].[m3]' />
+          <map key='[naam (energieverbruik)]' value='[energieverbruik].[naam]' />
+          <map key='[naam (energieverbruik1)]' value='[energieverbruik1].[naam]' />
+          <map key='[naam (zonnestroom)]' value='[zonnestroom].[naam]' />
+          <map key='[naam (zonnestroom1)]' value='[zonnestroom1].[naam]' />
+          <map key='[naam (zonnestroom2)]' value='[zonnestroom2].[naam]' />
+          <map key='[naam]' value='[hoofdverwarming].[naam]' />
+          <map key='[omschrijving (zonnestroom1)]' value='[zonnestroom1].[omschrijving]' />
+          <map key='[omschrijving (zonnestroom2)]' value='[zonnestroom2].[omschrijving]' />
+          <map key='[omschrijving]' value='[zonnestroom].[omschrijving]' />
+          <map key='[postcode]' value='[locaties_2024].[postcode]' />
+          <map key='[projectnaam]' value='[energielabels].[projectnaam]' />
+          <map key='[projectobject]' value='[energielabels].[projectobject]' />
+          <map key='[wijk_code (wijk_2024)]' value='[wijk_2024].[wijk_code]' />
+          <map key='[wijk_code]' value='[locaties_2024].[wijk_code]' />
+          <map key='[wijken_en_buurten]' value='[evz_locaties].[wijken_en_buurten]' />
+          <map key='[wijknaam]' value='[wijk_2024].[wijknaam]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>adres_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[adres_id]</local-name>
+            <parent-name>[locaties_2024]</parent-name>
+            <remote-alias>adres_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[locaties_2024_2406B18BF8414170960CAF72F827B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postcode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[postcode]</local-name>
+            <parent-name>[locaties_2024]</parent-name>
+            <remote-alias>postcode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[locaties_2024_2406B18BF8414170960CAF72F827B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buurt_code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[buurt_code]</local-name>
+            <parent-name>[locaties_2024]</parent-name>
+            <remote-alias>buurt_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[locaties_2024_2406B18BF8414170960CAF72F827B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wijk_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wijk_code]</local-name>
+            <parent-name>[locaties_2024]</parent-name>
+            <remote-alias>wijk_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[locaties_2024_2406B18BF8414170960CAF72F827B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gemeente_code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[gemeente_code]</local-name>
+            <parent-name>[locaties_2024]</parent-name>
+            <remote-alias>gemeente_code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[locaties_2024_2406B18BF8414170960CAF72F827B2A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nummer</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Nummer]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Nummer</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registratiedatum</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Registratiedatum]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Registratiedatum</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opnamedatum</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Opnamedatum]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Opnamedatum</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeldigTot</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[GeldigTot]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>GeldigTot</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Certificaathouder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Certificaathouder]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Certificaathouder</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SoortOpname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SoortOpname]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>SoortOpname</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Berekeningstype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Berekeningstype]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Berekeningstype</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpBasisVanReferentiegebouw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OpBasisVanReferentiegebouw]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>OpBasisVanReferentiegebouw</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gebouwklasse</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gebouwklasse]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Gebouwklasse</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gebouwtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gebouwtype]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Gebouwtype</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gebouwsubtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gebouwsubtype]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Gebouwsubtype</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SBICode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SBICode]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>SBICode</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postcode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Postcode]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Postcode</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Huisnummer</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Huisnummer]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Huisnummer</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Huisletter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Huisletter]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Huisletter</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Huisnummertoevoeging</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Huisnummertoevoeging]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Huisnummertoevoeging</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detailaanduiding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Detailaanduiding]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Detailaanduiding</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BAGVerblijfsobjectID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BAGVerblijfsobjectID]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>BAGVerblijfsobjectID</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BAGLigplaatsID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BAGLigplaatsID]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>BAGLigplaatsID</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BAGStandplaatsID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BAGStandplaatsID]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>BAGStandplaatsID</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BAGPandIDs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BAGPandIDs]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>BAGPandIDs</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bouwjaar</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Bouwjaar]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Bouwjaar</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GebruiksoppervlakteThermischeZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GebruiksoppervlakteThermischeZone]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>GebruiksoppervlakteThermischeZone</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Compactheid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Compactheid]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Compactheid</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energieklasse</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Energieklasse]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Energieklasse</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnergieIndex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EnergieIndex]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>EnergieIndex</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnergieIndexEMGForfaitair</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EnergieIndexEMGForfaitair]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>EnergieIndexEMGForfaitair</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energiebehoefte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Energiebehoefte]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Energiebehoefte</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrimaireFossieleEnergie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PrimaireFossieleEnergie]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>PrimaireFossieleEnergie</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrimaireFossieleEnergieEMGForfaitair</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PrimaireFossieleEnergieEMGForfaitair]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>PrimaireFossieleEnergieEMGForfaitair</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AandeelHernieuwbareEnergie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AandeelHernieuwbareEnergie]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>AandeelHernieuwbareEnergie</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AandeelHernieuwbareEnergieEMGForfaitair</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AandeelHernieuwbareEnergieEMGForfaitair]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>AandeelHernieuwbareEnergieEMGForfaitair</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperatuuroverschrijding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Temperatuuroverschrijding]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Temperatuuroverschrijding</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Warmtebehoefte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Warmtebehoefte]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>Warmtebehoefte</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EisEnergiebehoefte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EisEnergiebehoefte]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>EisEnergiebehoefte</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EisPrimaireFossieleEnergie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EisPrimaireFossieleEnergie]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>EisPrimaireFossieleEnergie</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EisAandeelHernieuwbareEnergie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EisAandeelHernieuwbareEnergie]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>EisAandeelHernieuwbareEnergie</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EisTemperatuuroverschrijding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EisTemperatuuroverschrijding]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>EisTemperatuuroverschrijding</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BerekendeCO2Emissie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BerekendeCO2Emissie]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>BerekendeCO2Emissie</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BerekendeEnergieverbruik</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BerekendeEnergieverbruik]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>BerekendeEnergieverbruik</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>projectnaam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[projectnaam]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>projectnaam</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>projectobject</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[projectobject]</local-name>
+            <parent-name>[energielabels]</parent-name>
+            <remote-alias>projectobject</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energielabels_AD25A853000C47A5866ED7EDC35C7D03]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buurt_code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[buurt_code (buurt)]</local-name>
+            <parent-name>[buurt]</parent-name>
+            <remote-alias>buurt_code</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[buurt_86C37C3A9B55452F89FE27CE7B018B9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buurtnaam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[buurtnaam]</local-name>
+            <parent-name>[buurt]</parent-name>
+            <remote-alias>buurtnaam</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[buurt_86C37C3A9B55452F89FE27CE7B018B9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[evz_locaties]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wijken_en_buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wijken_en_buurten]</local-name>
+            <parent-name>[evz_locaties]</parent-name>
+            <remote-alias>wijken_en_buurten</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adres_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[adres_id (evz_locaties)]</local-name>
+            <parent-name>[evz_locaties]</parent-name>
+            <remote-alias>adres_id</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Woningkenmerken</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Woningkenmerken]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>Woningkenmerken</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wijken en Buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wijken en Buurten]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>Wijken en Buurten</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[naam (energieverbruik)]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>naam</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>m3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[m3]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>m3</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWh</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kWh]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>kWh</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWh_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kWh_1]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>kWh_1</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% (energieverbruik)]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>%</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[code (energieverbruik)]</local-name>
+            <parent-name>[energieverbruik]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Woningkenmerken</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Woningkenmerken (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>Woningkenmerken</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wijken en Buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wijken en Buurten (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>Wijken en Buurten</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[naam (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>naam</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>m3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[m3 (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>m3</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWh</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kWh (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>kWh</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWh_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kWh_1 (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>kWh_1</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>%</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[code (energieverbruik1)]</local-name>
+            <parent-name>[energieverbruik1]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wijken en buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wijken en buurten]</local-name>
+            <parent-name>[hoofdverwarming]</parent-name>
+            <remote-alias>Wijken en buurten</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type verwarmingsinstallatie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type verwarmingsinstallatie]</local-name>
+            <parent-name>[hoofdverwarming]</parent-name>
+            <remote-alias>Type verwarmingsinstallatie</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[naam]</local-name>
+            <parent-name>[hoofdverwarming]</parent-name>
+            <remote-alias>naam</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[hoofdverwarming]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[%]</local-name>
+            <parent-name>[hoofdverwarming]</parent-name>
+            <remote-alias>%</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wijken en buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wijken en buurten (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>Wijken en buurten</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[naam (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>naam</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>omschrijving</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[omschrijving (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>omschrijving</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[code (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aantal</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aantal (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>aantal</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWp</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kWp (zonnestroom1)]</local-name>
+            <parent-name>[zonnestroom1]</parent-name>
+            <remote-alias>kWp</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wijken en buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wijken en buurten (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>Wijken en buurten</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[naam (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>naam</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>omschrijving</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[omschrijving (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>omschrijving</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[code (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aantal</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aantal (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>aantal</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWp</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kWp (zonnestroom2)]</local-name>
+            <parent-name>[zonnestroom2]</parent-name>
+            <remote-alias>kWp</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_FE52771772264E49ABBC13C80A946068]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gemeente_code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[gemeente_code (gemeente)]</local-name>
+            <parent-name>[gemeente]</parent-name>
+            <remote-alias>gemeente_code</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[gemeente_AE7004A627274BE38D465953B7F52D7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gemeentenaam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gemeentenaam]</local-name>
+            <parent-name>[gemeente]</parent-name>
+            <remote-alias>gemeentenaam</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[gemeente_AE7004A627274BE38D465953B7F52D7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wijk_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wijk_code (wijk_2024)]</local-name>
+            <parent-name>[wijk_2024]</parent-name>
+            <remote-alias>wijk_code</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[wijk_2024_E2BE730B2E8C4CF793B0A4B8B9CA3C18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wijknaam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wijknaam]</local-name>
+            <parent-name>[wijk_2024]</parent-name>
+            <remote-alias>wijknaam</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[wijk_2024_E2BE730B2E8C4CF793B0A4B8B9CA3C18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wijken en buurten</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wijken en buurten (zonnestroom)]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>Wijken en buurten</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[naam (zonnestroom)]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>naam</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>omschrijving</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[omschrijving]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>omschrijving</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID (zonnestroom)]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>200</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[code]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aantal</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aantal]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>aantal</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kWp</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kWp]</local-name>
+            <parent-name>[zonnestroom]</parent-name>
+            <remote-alias>kWp</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% (Energieverbruik)' datatype='string' name='[% (energieverbruik)]' role='dimension' type='nominal' />
+      <column caption='% (Energieverbruik1)' datatype='string' name='[% (energieverbruik1)]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[%]' role='measure' type='quantitative' />
+      <column caption='Aandeel Hernieuwbare Energie EMG Forfaitair' datatype='string' hidden='true' name='[AandeelHernieuwbareEnergieEMGForfaitair]' role='dimension' type='nominal' />
+      <column caption='Aandeel Hernieuwbare Energie' datatype='real' datatype-customized='true' hidden='true' name='[AandeelHernieuwbareEnergie]' role='dimension' type='ordinal' />
+      <column caption='BAG Ligplaats ID' datatype='string' hidden='true' name='[BAGLigplaatsID]' role='dimension' type='nominal' />
+      <column caption='BAG Pand I Ds' datatype='string' hidden='true' name='[BAGPandIDs]' role='dimension' type='nominal' />
+      <column caption='BAG Standplaats ID' datatype='string' hidden='true' name='[BAGStandplaatsID]' role='dimension' type='nominal' />
+      <column caption='BAG Verblijfsobject ID' datatype='string' hidden='true' name='[BAGVerblijfsobjectID]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[BerekendeCO2Emissie]' role='dimension' type='nominal' />
+      <column caption='Berekende Energieverbruik' datatype='string' hidden='true' name='[BerekendeEnergieverbruik]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Berekeningstype]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[Bouwjaar]' role='measure' type='quantitative' />
+      <column caption='Highlight wijk' datatype='string' name='[Calculation_1442589512036352]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Wijken en Buurten] = &quot;Feijenoord&quot; THEN&#13;&#10;&quot;Hoge productie&quot;&#13;&#10;ELSE&#13;&#10;&quot;Overige wijken&quot;&#13;&#10;END' />
+      </column>
+      <column caption='postcode_4' datatype='string' name='[Calculation_1519278648868864]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+        <calculation class='tableau' formula='left([postcode],4)' />
+      </column>
+      <column caption='sorted kwh' datatype='real' name='[Calculation_1559960257052672]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <column caption='Classificatie van Zonnestroomproductie' datatype='string' name='[Calculation_1559960280666113]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF { FIXED [Wijken en buurten (zonnestroom)] : AVG([kWp]) }&#13;&#10;   &gt;=&#13;&#10;   { FIXED : AVG([kWp]) } THEN&#13;&#10;&quot;Hoge Zonnestroomproductie&quot;&#13;&#10;ELSE&#13;&#10;&quot;Lage Zonnestroomproductie&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Land' datatype='string' name='[Calculation_1718293951332352]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+        <calculation class='tableau' formula='&quot;Netherlands&quot;' />
+      </column>
+      <column caption='Stad' datatype='string' name='[Calculation_1718293959716865]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Rotterdam&quot;' />
+      </column>
+      <column caption='buurt CF' datatype='string' name='[Calculation_1718293962457091]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;BU&quot; + STR([buurt_code])' />
+      </column>
+      <column caption='Highlighted wijk(zonnestroom)' datatype='string' name='[Calculation_2030830114504704]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF AVG([kWp]) &gt;= WINDOW_AVG(AVG([kWp])) THEN&#13;&#10;&quot;Hoge Zonnestroomproductie&quot;&#13;&#10;ELSE&#13;&#10;&quot;Lage Zonnestroomproductie&quot;&#13;&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' hidden='true' name='[Certificaathouder]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Compactheid]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Detailaanduiding]' role='dimension' type='nominal' />
+      <column caption='Eis Aandeel Hernieuwbare Energie' datatype='string' hidden='true' name='[EisAandeelHernieuwbareEnergie]' role='dimension' type='nominal' />
+      <column caption='Eis Energiebehoefte' datatype='string' hidden='true' name='[EisEnergiebehoefte]' role='dimension' type='nominal' />
+      <column caption='Eis Primaire Fossiele Energie' datatype='string' hidden='true' name='[EisPrimaireFossieleEnergie]' role='dimension' type='nominal' />
+      <column caption='Eis Temperatuuroverschrijding' datatype='string' hidden='true' name='[EisTemperatuuroverschrijding]' role='dimension' type='nominal' />
+      <column caption='Energie Index EMG Forfaitair' datatype='string' hidden='true' name='[EnergieIndexEMGForfaitair]' role='dimension' type='nominal' />
+      <column caption='Energie Index' datatype='string' hidden='true' name='[EnergieIndex]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Energiebehoefte]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Energieklasse]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Gebouwklasse]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Gebouwsubtype]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Gebouwtype]' role='dimension' type='nominal' />
+      <column caption='Gebruiksoppervlakte Thermische Zone' datatype='string' hidden='true' name='[GebruiksoppervlakteThermischeZone]' role='dimension' type='nominal' />
+      <column caption='Geldig Tot' datatype='integer' hidden='true' name='[GeldigTot]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Huisletter]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[Huisnummer]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Huisnummertoevoeging]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[ID]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[Nummer]' role='measure' type='quantitative' />
+      <column caption='Op Basis Van Referentiegebouw' datatype='string' hidden='true' name='[OpBasisVanReferentiegebouw]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[Opnamedatum]' role='measure' type='quantitative' />
+      <column caption='Postcode1' datatype='string' hidden='true' name='[Postcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Primaire Fossiele Energie EMG Forfaitair' datatype='string' hidden='true' name='[PrimaireFossieleEnergieEMGForfaitair]' role='dimension' type='nominal' />
+      <column caption='Primaire Fossiele Energie' datatype='string' hidden='true' name='[PrimaireFossieleEnergie]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[Registratiedatum]' role='measure' type='quantitative' />
+      <column caption='SBI Code' datatype='string' hidden='true' name='[SBICode]' role='dimension' type='nominal' />
+      <column caption='Soort Opname' datatype='string' hidden='true' name='[SoortOpname]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Status]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Temperatuuroverschrijding]' role='dimension' type='nominal' />
+      <column datatype='integer' datatype-customized='true' hidden='true' name='[Type verwarmingsinstallatie]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[Warmtebehoefte]' role='dimension' type='nominal' />
+      <column caption='Wijken en buurten (zonnestroom)1' datatype='string' name='[Wijken en buurten (zonnestroom)]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='string' hidden='true' name='[Wijken en buurten]' role='dimension' type='nominal' />
+      <column caption='energielabels' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[energielabels_AD25A853000C47A5866ED7EDC35C7D03]' role='measure' type='quantitative' />
+      <column caption='buurt' datatype='table' name='[__tableau_internal_object_id__].[buurt_86C37C3A9B55452F89FE27CE7B018B9D]' role='measure' type='quantitative' />
+      <column caption='energieverbruik' datatype='table' name='[__tableau_internal_object_id__].[energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746]' role='measure' type='quantitative' />
+      <column caption='energieverbruik1' datatype='table' name='[__tableau_internal_object_id__].[energieverbruik_6C9D109DDC164BA489C771E70A9D030C]' role='measure' type='quantitative' />
+      <column caption='evz_locaties' datatype='table' name='[__tableau_internal_object_id__].[evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941]' role='measure' type='quantitative' />
+      <column caption='gemeente' datatype='table' name='[__tableau_internal_object_id__].[gemeente_AE7004A627274BE38D465953B7F52D7F]' role='measure' type='quantitative' />
+      <column caption='hoofdverwarming' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6]' role='measure' type='quantitative' />
+      <column caption='locaties_2024' datatype='table' name='[__tableau_internal_object_id__].[locaties_2024_2406B18BF8414170960CAF72F827B2A5]' role='measure' type='quantitative' />
+      <column caption='wijk_2024' datatype='table' name='[__tableau_internal_object_id__].[wijk_2024_E2BE730B2E8C4CF793B0A4B8B9CA3C18]' role='measure' type='quantitative' />
+      <column caption='zonnestroom' datatype='table' name='[__tableau_internal_object_id__].[zonnestroom_1818623BD3D8475081566D5FB4E01D1E]' role='measure' type='quantitative' />
+      <column caption='zonnestroom1' datatype='table' name='[__tableau_internal_object_id__].[zonnestroom_9E2853EF84864E5E938D2850342FFCCA]' role='measure' type='quantitative' />
+      <column caption='zonnestroom2' datatype='table' name='[__tableau_internal_object_id__].[zonnestroom_FE52771772264E49ABBC13C80A946068]' role='measure' type='quantitative' />
+      <column caption='Aantal (Zonnestroom1)' datatype='integer' name='[aantal (zonnestroom1)]' role='measure' type='quantitative' />
+      <column caption='Aantal (Zonnestroom2)' datatype='integer' name='[aantal (zonnestroom2)]' role='measure' type='quantitative' />
+      <column caption='Aantal' datatype='integer' name='[aantal]' role='dimension' type='ordinal' />
+      <column caption='Adres Id (Evz Locaties)' datatype='integer' name='[adres_id (evz_locaties)]' role='dimension' type='ordinal' />
+      <column caption='Adres Id' datatype='integer' name='[adres_id]' role='dimension' type='ordinal' />
+      <column caption='Buurt Code (Buurt)' datatype='integer' name='[buurt_code (buurt)]' role='dimension' type='ordinal' />
+      <column caption='Buurt Code' datatype='integer' name='[buurt_code]' role='dimension' type='ordinal' />
+      <column caption='Buurtnaam' datatype='string' name='[buurtnaam]' role='dimension' type='nominal' />
+      <column caption='Code (Energieverbruik)' datatype='integer' name='[code (energieverbruik)]' role='dimension' type='ordinal' />
+      <column caption='Code (Energieverbruik1)' datatype='integer' name='[code (energieverbruik1)]' role='dimension' type='ordinal' />
+      <column caption='Code (Zonnestroom1)' datatype='integer' name='[code (zonnestroom1)]' role='dimension' type='ordinal' />
+      <column caption='Code (Zonnestroom2)' datatype='integer' name='[code (zonnestroom2)]' role='dimension' type='ordinal' />
+      <column caption='Code' datatype='integer' name='[code]' role='dimension' type='ordinal' />
+      <column caption='Gemeente Code (Gemeente)' datatype='integer' name='[gemeente_code (gemeente)]' role='dimension' type='ordinal' />
+      <column caption='Gemeente Code' datatype='integer' name='[gemeente_code]' role='dimension' type='ordinal' />
+      <column caption='Gemeentenaam' datatype='string' name='[gemeentenaam]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='K Wh' datatype='integer' name='[kWh]' role='dimension' type='ordinal' />
+      <column caption='kWh 1 (energieverbruik1)' datatype='string' name='[kWh_1 (energieverbruik1)]' role='dimension' type='nominal' />
+      <column caption='kWh 1' datatype='string' name='[kWh_1]' role='dimension' type='nominal' />
+      <column caption='K Wp' datatype='integer' name='[kWp]' role='dimension' type='ordinal' />
+      <column caption='M3 (Energieverbruik1)' datatype='string' name='[m3 (energieverbruik1)]' role='dimension' type='nominal' />
+      <column caption='M3' datatype='string' name='[m3]' role='dimension' type='nominal' />
+      <column caption='Naam (Energieverbruik)' datatype='string' name='[naam (energieverbruik)]' role='dimension' type='nominal' />
+      <column caption='Naam (Energieverbruik1)' datatype='string' name='[naam (energieverbruik1)]' role='dimension' type='nominal' />
+      <column caption='Naam (Zonnestroom)' datatype='string' name='[naam (zonnestroom)]' role='dimension' type='nominal' />
+      <column caption='Naam (Zonnestroom1)' datatype='string' name='[naam (zonnestroom1)]' role='dimension' type='nominal' />
+      <column caption='Naam (Zonnestroom2)' datatype='string' name='[naam (zonnestroom2)]' role='dimension' type='nominal' />
+      <column caption='Naam' datatype='string' hidden='true' name='[naam]' role='dimension' type='nominal' />
+      <column caption='Omschrijving (Zonnestroom1)' datatype='string' name='[omschrijving (zonnestroom1)]' role='dimension' type='nominal' />
+      <column caption='Omschrijving (Zonnestroom2)' datatype='string' name='[omschrijving (zonnestroom2)]' role='dimension' type='nominal' />
+      <column caption='Omschrijving' datatype='string' name='[omschrijving]' role='dimension' type='nominal' />
+      <column caption='Postcode' datatype='string' name='[postcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Projectnaam' datatype='string' hidden='true' name='[projectnaam]' role='dimension' type='nominal' />
+      <column caption='Projectobject' datatype='string' hidden='true' name='[projectobject]' role='dimension' type='nominal' />
+      <column caption='Wijk Code (Wijk 2024)' datatype='string' name='[wijk_code (wijk_2024)]' role='dimension' type='nominal' />
+      <column caption='Wijk Code' datatype='string' name='[wijk_code]' role='dimension' type='nominal' />
+      <column caption='Wijken En Buurten' datatype='string' name='[wijken_en_buurten]' role='dimension' type='nominal' />
+      <column caption='Wijknaam' datatype='string' name='[wijknaam]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1442589512036352]' derivation='None' name='[none:Calculation_1442589512036352:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1519278648868864]' derivation='None' name='[none:Calculation_1519278648868864:nk]' pivot='key' type='nominal' />
+      <column-instance column='[kWp]' derivation='None' name='[none:kWp:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_1559960280666113]' derivation='User' name='[usr:Calculation_1559960280666113:nk:2]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2030830114504704]' derivation='User' name='[usr:Calculation_2030830114504704:nk:2]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Calculation_2030830114504704]' derivation='User' name='[usr:Calculation_2030830114504704:nk]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_1559960280666113:nk:2]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Hoge Zonnestroomproductie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lage Zonnestroomproductie&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1519278648868864:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;3023&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;3045&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;3072&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;3192&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3011&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3036&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3063&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3085&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3015&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3041&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3067&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3089&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3027&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3052&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3076&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3196&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;3024&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;3046&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;3073&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;3193&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3016&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3042&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3068&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3151&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;3034&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;3061&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;3083&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3012&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3037&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3064&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3086&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3032&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3056&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3081&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3021&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3043&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3069&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3181&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3028&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3053&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3077&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3197&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3029&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3054&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3078&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3198&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3033&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3059&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3082&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;3035&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;3062&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;3084&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3025&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3047&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3074&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3194&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;3022&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;3044&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;3071&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;3191&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3013&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3038&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3065&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3087&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3031&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3055&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3079&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3199&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3026&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3051&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3075&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3195&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3014&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3039&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3066&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3088&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1442589512036352:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Hoge productie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Overige wijken&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2030830114504704:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Hoge zonnestroom&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hoge Zonnestroomproductie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lage zonnestroom&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lage Zonnestroomproductie&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_2030830114504704:nk:2]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Hoge Zonnestroomproductie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lage Zonnestroomproductie&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:kWp:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>1625</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1103</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>4269</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2572</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>1160</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>8275</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6653</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>1311</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>5901</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>6180</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>7374</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>19700</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3656</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1385</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>230</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>6625</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>4197</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>522</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Netherlands&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='energielabels' id='energielabels_AD25A853000C47A5866ED7EDC35C7D03'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='energielabels' table='[public].[energielabels]' type='table' />
+            </properties>
+          </object>
+          <object caption='buurt' id='buurt_86C37C3A9B55452F89FE27CE7B018B9D'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='buurt' table='[public].[buurt]' type='table' />
+            </properties>
+          </object>
+          <object caption='energieverbruik' id='energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='energieverbruik' table='[public].[energieverbruik]' type='table' />
+            </properties>
+          </object>
+          <object caption='energieverbruik1' id='energieverbruik_6C9D109DDC164BA489C771E70A9D030C'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='energieverbruik1' table='[public].[energieverbruik]' type='table' />
+            </properties>
+          </object>
+          <object caption='evz_locaties' id='evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='evz_locaties' table='[public].[evz_locaties]' type='table' />
+            </properties>
+          </object>
+          <object caption='gemeente' id='gemeente_AE7004A627274BE38D465953B7F52D7F'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='gemeente' table='[public].[gemeente]' type='table' />
+            </properties>
+          </object>
+          <object caption='hoofdverwarming' id='hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='hoofdverwarming' table='[public].[hoofdverwarming]' type='table' />
+            </properties>
+          </object>
+          <object caption='locaties_2024' id='locaties_2024_2406B18BF8414170960CAF72F827B2A5'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='locaties_2024' table='[public].[locaties_2024]' type='table' />
+            </properties>
+          </object>
+          <object caption='wijk_2024' id='wijk_2024_E2BE730B2E8C4CF793B0A4B8B9CA3C18'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='wijk_2024' table='[public].[wijk_2024]' type='table' />
+            </properties>
+          </object>
+          <object caption='zonnestroom' id='zonnestroom_1818623BD3D8475081566D5FB4E01D1E'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='zonnestroom' table='[public].[zonnestroom]' type='table' />
+            </properties>
+          </object>
+          <object caption='zonnestroom1' id='zonnestroom_9E2853EF84864E5E938D2850342FFCCA'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='zonnestroom1' table='[public].[zonnestroom]' type='table' />
+            </properties>
+          </object>
+          <object caption='zonnestroom2' id='zonnestroom_FE52771772264E49ABBC13C80A946068'>
+            <properties context=''>
+              <relation connection='postgres.04be2jp0vye2s518z2ol10texwbi' name='zonnestroom2' table='[public].[zonnestroom]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[postcode]' />
+              <expression op='[Postcode]' />
+            </expression>
+            <first-end-point object-id='locaties_2024_2406B18BF8414170960CAF72F827B2A5' />
+            <second-end-point object-id='energielabels_AD25A853000C47A5866ED7EDC35C7D03' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[buurt_code]' />
+              <expression op='[buurt_code (buurt)]' />
+            </expression>
+            <first-end-point object-id='locaties_2024_2406B18BF8414170960CAF72F827B2A5' />
+            <second-end-point object-id='buurt_86C37C3A9B55452F89FE27CE7B018B9D' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[wijken_en_buurten]' />
+              <expression op='[Wijken en Buurten]' />
+            </expression>
+            <first-end-point object-id='evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941' />
+            <second-end-point object-id='energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[code (energieverbruik)]' />
+              <expression op='[code (energieverbruik1)]' />
+            </expression>
+            <first-end-point object-id='energieverbruik_3FEC9BE0118F4DE5860ED25D397BA746' />
+            <second-end-point object-id='energieverbruik_6C9D109DDC164BA489C771E70A9D030C' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[adres_id]' />
+              <expression op='[adres_id (evz_locaties)]' />
+            </expression>
+            <first-end-point object-id='locaties_2024_2406B18BF8414170960CAF72F827B2A5' />
+            <second-end-point object-id='evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[gemeente_code]' />
+              <expression op='[gemeente_code (gemeente)]' />
+            </expression>
+            <first-end-point object-id='locaties_2024_2406B18BF8414170960CAF72F827B2A5' />
+            <second-end-point object-id='gemeente_AE7004A627274BE38D465953B7F52D7F' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[ID]' />
+            </expression>
+            <first-end-point object-id='evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941' />
+            <second-end-point object-id='hoofdverwarming_7D278C5AE03F47FEA7F170FB05577AC6' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[wijk_code]' />
+              <expression op='[wijk_code (wijk_2024)]' />
+            </expression>
+            <first-end-point object-id='locaties_2024_2406B18BF8414170960CAF72F827B2A5' />
+            <second-end-point object-id='wijk_2024_E2BE730B2E8C4CF793B0A4B8B9CA3C18' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[buurt_code]' />
+              <expression op='[code]' />
+            </expression>
+            <first-end-point object-id='locaties_2024_2406B18BF8414170960CAF72F827B2A5' />
+            <second-end-point object-id='zonnestroom_1818623BD3D8475081566D5FB4E01D1E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[ID (zonnestroom1)]' />
+            </expression>
+            <first-end-point object-id='evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941' />
+            <second-end-point is-db-set-unique-key='true' object-id='zonnestroom_9E2853EF84864E5E938D2850342FFCCA' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[ID (zonnestroom2)]' />
+            </expression>
+            <first-end-point object-id='evz_locaties_BBA8A5BA392947C9B59CAA8EC54EC941' />
+            <second-end-point is-db-set-unique-key='true' object-id='zonnestroom_FE52771772264E49ABBC13C80A946068' unique-key='true' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Aantal zonnepanelen per wijk'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zonnestroom+ (postgres)' name='federated.0zxq8no1i2vjoa124pvb602eir3b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zxq8no1i2vjoa124pvb602eir3b'>
+            <column caption='Highlighted wijk(zonnestroom)' datatype='string' name='[Calculation_2030830114504704]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF AVG([kWp]) &gt;= WINDOW_AVG(AVG([kWp])) THEN&#13;&#10;&quot;Hoge Zonnestroomproductie&quot;&#13;&#10;ELSE&#13;&#10;&quot;Lage Zonnestroomproductie&quot;&#13;&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Wijken en buurten (zonnestroom)1' datatype='string' name='[Wijken en buurten (zonnestroom)]' role='dimension' semantic-role='' type='nominal' />
+            <column caption='Aantal' datatype='integer' name='[aantal]' role='dimension' type='ordinal' />
+            <column caption='K Wp' datatype='integer' name='[kWp]' role='dimension' type='ordinal' />
+            <column-instance column='[Wijken en buurten (zonnestroom)]' derivation='None' name='[none:Wijken en buurten (zonnestroom):nk]' pivot='key' type='nominal' />
+            <column-instance column='[aantal]' derivation='Sum' name='[sum:aantal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2030830114504704]' derivation='User' name='[usr:Calculation_2030830114504704:nk]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;&apos;s-Gravenland&quot;' />
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Blijdorp&quot;' />
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Hoek van Holland&quot;' />
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Kop van Zuid&quot;' />
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Kralingen West&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:aantal:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]' value='170' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:aantal:qk]' value='' />
+            <format attr='display-alternate-text' field='[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:aantal:qk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_2030830114504704:nk]' />
+              <lod column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Aantal zonnepanelen: &lt;</run>
+                <run>[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:aantal:qk]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:aantal:qk]</rows>
+        <cols>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</cols>
+      </table>
+      <simple-id uuid='{0607CBEA-C41E-4ADA-A1AC-E0CBE1337D28}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zonnestroom+ (postgres)' name='federated.0zxq8no1i2vjoa124pvb602eir3b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0zxq8no1i2vjoa124pvb602eir3b' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <geometry column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zxq8no1i2vjoa124pvb602eir3b].[Latitude (generated)]</rows>
+        <cols>[federated.0zxq8no1i2vjoa124pvb602eir3b].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{DAD21085-BD33-4E2A-B436-22D34D58EAC4}' />
+    </worksheet>
+    <worksheet name='Totale energieverbruik per wijk (kWh)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Totale energieverbruik per wijk (kWh)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zonnestroom+ (postgres)' name='federated.0zxq8no1i2vjoa124pvb602eir3b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zxq8no1i2vjoa124pvb602eir3b'>
+            <column caption='Highlight wijk' datatype='string' name='[Calculation_1442589512036352]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Wijken en Buurten] = &quot;Feijenoord&quot; THEN&#13;&#10;&quot;Hoge productie&quot;&#13;&#10;ELSE&#13;&#10;&quot;Overige wijken&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Wijken en Buurten]' role='dimension' type='nominal' />
+            <column caption='K Wh' datatype='integer' name='[kWh]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1442589512036352]' derivation='None' name='[none:Calculation_1442589512036352:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Wijken en Buurten]' derivation='None' name='[none:Wijken en Buurten:nk]' pivot='key' type='nominal' />
+            <column-instance column='[kWh]' derivation='Sum' name='[sum:kWh:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Wijken en Buurten:nk]' member='&quot;Bergpolder&quot;' />
+              <groupfilter function='member' level='[none:Wijken en Buurten:nk]' member='&quot;Blijdorp&quot;' />
+              <groupfilter function='member' level='[none:Wijken en Buurten:nk]' member='&quot;Charlois&quot;' />
+              <groupfilter function='member' level='[none:Wijken en Buurten:nk]' member='&quot;Feijenoord&quot;' />
+              <groupfilter function='member' level='[none:Wijken en Buurten:nk]' member='&quot;Hoek van Holland&quot;' />
+              <groupfilter function='member' level='[none:Wijken en Buurten:nk]' member='&quot;Oude Westen&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]' value='164' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Calculation_1442589512036352:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Wijk: <[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Totaal verbruik: <[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:kWh:qk]> kWh]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-transparency' value='211' />
+                <format attr='size' value='1.6481767892837524' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:kWh:qk]</rows>
+        <cols>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]</cols>
+      </table>
+      <simple-id uuid='{7AC282B2-D733-4321-BB65-1569F31BB344}' />
+    </worksheet>
+    <worksheet name='Vergelijking van zonnestroomproductie per wijk'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Vergelijking van zonnestroomproductie per wijk</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zonnestroom+ (postgres)' name='federated.0zxq8no1i2vjoa124pvb602eir3b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zxq8no1i2vjoa124pvb602eir3b'>
+            <column caption='Highlighted wijk(zonnestroom)' datatype='string' name='[Calculation_2030830114504704]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF AVG([kWp]) &gt;= WINDOW_AVG(AVG([kWp])) THEN&#13;&#10;&quot;Hoge Zonnestroomproductie&quot;&#13;&#10;ELSE&#13;&#10;&quot;Lage Zonnestroomproductie&quot;&#13;&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Wijken en buurten (zonnestroom)1' datatype='string' name='[Wijken en buurten (zonnestroom)]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[kWp]' derivation='Avg' name='[avg:kWp:qk]' pivot='key' type='quantitative' />
+            <column caption='K Wp' datatype='integer' name='[kWp]' role='dimension' type='ordinal' />
+            <column-instance column='[Wijken en buurten (zonnestroom)]' derivation='None' name='[none:Wijken en buurten (zonnestroom):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2030830114504704]' derivation='User' name='[usr:Calculation_2030830114504704:nk:2]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Afrikaanderwijk&quot;' />
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Bergpolder&quot;' />
+              <groupfilter function='member' level='[none:Wijken en buurten (zonnestroom):nk]' member='&quot;Bloemhof&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]' value='129' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_2030830114504704:nk:2]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Wijk: &lt;Wijken en buurten&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Gemiddelde zonne-energie (kWp): <[federated.0zxq8no1i2vjoa124pvb602eir3b].[avg:kWp:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Classificatie: <AGG(Classificatie van Zonnestroomproductie)>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</rows>
+        <cols>[federated.0zxq8no1i2vjoa124pvb602eir3b].[avg:kWp:qk]</cols>
+      </table>
+      <simple-id uuid='{4557ACC0-9AFA-4758-8193-6C232AD8149E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{43F07335-E85A-4948-9125-BF84223321B2}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Totale energieverbruik per wijk (kWh)'>
+      <cards>
+        <edge name='left'>
+          <strip size='252'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Calculation_1442589512036352:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Calculation_1442589512036352:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en Buurten:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:kWh:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:kWp:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2980C461-DC98-4E90-A083-F56BDFFE00A2}' />
+    </window>
+    <window class='worksheet' name='Vergelijking van zonnestroomproductie per wijk'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_2030830114504704:nk:2]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:kWh:ok]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:kWp:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:kWp:ok]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_1559960280666113:nk:2]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_2030830114504704:nk:2]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E5A35628-3766-48DE-A917-57845E3F17F5}' />
+    </window>
+    <window class='worksheet' name='Aantal zonnepanelen per wijk'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_2030830114504704:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:aantal:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[usr:Calculation_2030830114504704:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5129AF62-6E79-497E-9335-013C5209285F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Calculation_1519278648868864:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Calculation_1718293951332352:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Calculation_1718293959716865:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:Wijken en buurten (zonnestroom):nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:buurt_code:ok]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:kWh:ok]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:wijk_code (wijk_2024):nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[none:wijknaam:nk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:aantal:qk]</field>
+            <field>[federated.0zxq8no1i2vjoa124pvb602eir3b].[sum:kWp:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{416AB88D-A70D-420C-ADC1-283D575FF937}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1F4DD0A4-7612-4622-912E-79B932AA429C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Aantal zonnepanelen per wijk' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAEzElEQVR4nO3bTUsrdxiG8ftMYl4QozUHoyAiBKUiuBBcistuuiildHXol+iyH0bouq5a
+      esAe3BWKCxeHgoEqx2pCDJIIphND3qaLQ4UW2kKdZoz39VvNIszzbC7+Mwl5EUVRJMBUIElR
+      FIkO4Cj442I0GiW5B5CI4N8/AjxfBABrBABrBABrBABrBABrBABrBABr6aQXwN8bDodKpVIP
+      10EQqNfrKZVKPfx6n8lkEt5ysnECPFGNRkMHBweS3v9Kv7+/r06no8PDQ7VaLR0dHalerye8
+      5eQjgCeqVCppYWFBkhQEgTY3NxVFkYrFos7OzlQqlXR6eprwlpOPR6Anql6vq9FoqFarKZ1O
+      q1arKZPJKIoi5fN59ft95fP5pNeceC+i9zQajR6eNwEXnABj9MtNRT9d/JjY/E+2PtdMdiax
+      +U8RAYzR5e2ven36bWLzP/rwYwL4C16CYY0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYC0d5836
+      /b6Oj4+1vLysZrOpqakp5XI5NZtN7ezsKJVKxTkOeLRYT4B2u61Wq6WrqyvNz8/r+vpaxWJR
+      zWZTvV4vzlFALGIN4O7uTuvr67q/v1epVNJgMFA2m9Xs7Ky63W6co4BYxBrAysqKwjDU1taW
+      KpWK1tbWVKvVNDMzo7m5uThHAbGI9R0gCAJtb29LkkqlUpy3Bv4X/xjAV999qXet83Ht8ifp
+      IK2vX32TyGz44GtQWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMA
+      WCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWCMAWBkO
+      hwrDUKPRSGEYKp30QsA4VatVnZ+fK5/PS+IEgJlcLqcgCFQulxVFEQHAS6VSUTabVafT0XA4
+      5BEIXvb29h6uV1dXCQCTq399rfb3rx91DwLAxBre3uq3wx8edQ/eAWCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGDNOoB2u62bmxtFUaSL
+      iwsNBoOkV8KYWf8p/uTkRIPBQNPT0yoUChqNRkmvhDGzPgEKhYKq1aouLy/V7XZVqVSSXglj
+      Zh/AxsaGdnd3FYahFhcXk14JY2b9CFQul1UulyVJS0tLCW+DJDyLANpv3qj79ufE5n/wxSul
+      X75MbD7+u2cRQP/dhe6PjxObP/vZp4nNxuNYvwMABABrBABrBABrBABrvwNc3fqsJHzhlQAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Totale energieverbruik per wijk (kWh)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Vergelijking van zonnestroomproductie per wijk' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
